@@ -27,12 +27,10 @@ body {
     background-position: 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    box-shadow: 0 0 20px 15px rgba(200, 200, 200, .3);
 }
 
 .sombra {
-    box-shadow: 0 0 20px 15px rgba(200, 200, 200, .3);
+    box-shadow: 0 0 50px 20px rgba(100, 100, 100, 0.25);
 }
 
 .redondear {
@@ -41,14 +39,26 @@ body {
 
 .boton {
     background-color: #AD961F !important;
+    font-family: 'Source Serif Pro', serif !important;
+    font-weight: light !important;
     color: white !important;
-    box-shadow: 0 0 20px 10px rgba(65, 65, 65, 0.1);
+    /* box-shadow: 0 0 20px 10px rgba(65, 65, 65, 0.1); */
 }
 
-h1,
+h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold !important;
+    color: #10113C !important;
+}
+
 h4,
+h5,
 h6 {
     font-family: 'Source Serif Pro', serif;
+    font-weight: light !important;
+    font-style: italic;
+    color: #10113C !important;
+    line-height: 2em !important;
 }
 
 .fondo {
