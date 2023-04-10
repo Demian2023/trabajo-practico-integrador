@@ -4,6 +4,23 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Serif Pro', serif;
+    position: relative;
+    height: 100vh;
+}
+
+.temperatura {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    width: 230px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: rgba(100, 100, 100, 0.75);
+    color: white;
 }
 
 .color-neutro {
@@ -15,7 +32,7 @@ body {
 }
 
 .color-acento {
-    background-color: #10113C;
+    background-color: hsl(239, 58%, 15%);
 }
 
 .blanco {
