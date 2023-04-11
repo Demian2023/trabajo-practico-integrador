@@ -32,6 +32,7 @@ $("#formulario").validate({
      email: {
        required: "Por favor, ingrese su mail",
        email: "Ingrese el formato correcto de mail",
+      }
     },
 });
 
