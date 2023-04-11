@@ -31,11 +31,11 @@ $("#formulario").validate({
     'email.email': 'Por favor, introduce una dirección de correo electrónico válida'
   }
     }
-})
+});
 
 
 
 function validar(){
     if($("#formulario").valid() == false){
         return;
-    }
+    };
