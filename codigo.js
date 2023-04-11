@@ -10,5 +10,6 @@ $(document).ready(function() {
 
 function validar() {
     let formulario = $("#formulario");
-    validate(formulario, constrains);
+    let constraints = {username: {presence: true}};
+    validate(formulario, constraints);
     }
