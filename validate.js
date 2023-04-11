@@ -16,12 +16,23 @@ $("#formulario").validate({
       email: true
     }
   },
-  messages: {
-    'nombre.required': 'Por favor, introduce tu nombre',
-    'apellido.required': 'Por favor, introduce tu apellido',
-    'email.required': 'Por favor, introduce tu dirección de correo electrónico',
-    'email.email': 'Por favor, introduce una dirección de correo electrónico válida'
-  }
+   messages: {
+      nombre: {
+        required: "Por favor, ingrese su nombre",
+        minlength: "El nombre debe tener al menos 2 caracteres",
+        maxlength: "El nombre no debe tener más de 50 caracteres",
+        pattern: "Por favor, ingrese un nombre válido",
+      },
+     apellido: {
+        required: "Por favor, ingrese su apellido",
+        minlength: "El nombre debe tener al menos 2 caracteres",
+        maxlength: "El nombre no debe tener más de 50 caracteres",
+        pattern: "Por favor, ingrese un apellido válido",
+      },
+     email: {
+       required: "Por favor, ingrese su mail",
+       email: "Ingrese el formato correcto de mail",
+    },
 });
 
 
