@@ -24,9 +24,9 @@ $("#formulario").validate({
   }
 });
 
-$(document).ready(function() {
+
 $("#validar").click() {
     if($("#formulario").valid() == false){
         return;
-    }
-  });
+    };
+ 
