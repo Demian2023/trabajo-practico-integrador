@@ -9,9 +9,6 @@ $(document).ready(function() {
 });
 
 function validar() {
-    let formulario = $("#formulario");
-    let constraints = {username: {presence: {message: "Complete el campo"}}};
-    validate(formulario, constraints);
-    let valido=validate(formulario, constraints);
-    console.log(valido);
+    $("#formulario").validate({
+nombre: true,})
     }
