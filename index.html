@@ -16,7 +16,7 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!-- Validate.js -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <title>Trabajo práctico integrador</title>
 </head>
 
@@ -71,11 +71,11 @@
                 <div class="col-8" id="formulario">
                     <div class="mb-3">
                         <label for="nombre" class="form-label color-blanco">Nombre y apellido</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre y apellido">
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre y apellido">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label color-blanco">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Tudirecciondemail@ejemplo.com">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Tudirecciondemail@ejemplo.com">
                     </div>
                     <button type="submit" class="btn boton" onclick="validar()">Enviar</button>
                 </div>
