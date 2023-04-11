@@ -24,8 +24,9 @@ $("#formulario").validate({
   }
 });
 
-
+$(document).ready(function() {
 function validar(){
     if($("#formulario").valid() == false){
         return;
     }
+  });
