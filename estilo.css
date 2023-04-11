@@ -3,7 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     height: 100vh;
 }
@@ -21,27 +21,53 @@ body {
     border-radius: 1em;
     background-color: rgba(100, 100, 100, 0.75);
     color: white;
+    z-index: 10;
+}
+
+.arriba {
+    position: fixed;
+    bottom: 35px;
+    right: 0;
+    height: 30px;
+    width: 80px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: rgba(100, 100, 100, 0.75);
+    color: white !important;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
 }
 
 .color-neutro {
-    background-color: #747898;
+    background-color: #F2EECE;
 }
 
 .color-complementario {
-    background-color: #F6DC3B;
+    background-color: #96D600;
 }
 
 .color-acento {
-    background-color: hsl(239, 58%, 15%);
+    background-color: #08FF00;
 }
 
 .blanco {
     background-color: white;
 }
 
+.color-blanco {
+    color: white;
+}
+
 .imagen {
-    background-image: url(imagenes/negocio.jpg);
-    background-position: 25%;
+    background-image: url(imagenes/alimentos.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -55,15 +81,13 @@ body {
 }
 
 .boton {
-    background-color: #AD961F !important;
-    font-family: 'Source Serif Pro', serif !important;
+    background-color: #08FF00 !important;
+    font-family: 'Montserrat', sans-serif !important;
     font-weight: light !important;
-    color: white !important;
-    /* box-shadow: 0 0 20px 10px rgba(65, 65, 65, 0.1); */
 }
 
 h1 {
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold !important;
     color: #10113C !important;
 }
@@ -71,8 +95,8 @@ h1 {
 h4,
 h5,
 h6 {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: light !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold !important;
     font-style: italic;
     color: #10113C !important;
     line-height: 2em !important;
@@ -85,7 +109,23 @@ h6 {
     padding: 0;
 }
 
-@media only screen and (max-width: 768px) {
+.fondo-imagen {
+    position: absolute;
+    background-image: url(imagenes/alimentos.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.blur {
+    backdrop-filter: blur(15px) brightness(150%) contrast(20%);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 575.98px) {
+    ...
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
     #contenedor {
         height: fit-content !important;
     }
@@ -95,4 +135,27 @@ h6 {
     #contenedor3 {
         height: fit-content !important;
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    #contenedor {
+        height: fit-content !important;
+    }
+    #contenedor2 {
+        height: fit-content !important;
+    }
+    #contenedor3 {
+        height: fit-content !important;
+    }
+    .fit-content {
+        height: fit-content !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    ...
+}
+
+@media only screen and (min-width: 1200px) {
+    ...
 }

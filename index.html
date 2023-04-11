@@ -12,24 +12,27 @@
     <!-- fuente de texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- Validate.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <title>Trabajo práctico integrador</title>
 </head>
 
 <body>
     <div class="temperatura" id="temperatura">La temperatura actual es: </div>
-    <div class="container">
+    <a href="#inicio" class="arriba">Ir arriba</a>
+    <div class="container" id="inicio">
         <div class="row justify-content-center align-items-center text-center vh-100" id="contenedor">
             <div class="col-sm-12 col-md-3 m-2 imagen redondear d-flex align-items-center sombra ancho" style="height: 350px" id="imagen"></div>
             <div class="col-sm-12 col-md-6 m-2 color-complementario d-flex justify-content-center align-items-center redondear ancho" style="height: 400px" id="texto1">
                 <div class="col-md-12">
-                    <h1>Título a determinar</h1>
+                    <h1>FitFuel</h1>
                     <br>
-                    <h4>Subtítulo a definir</h4>
+                    <h4>Combustible para atletas</h4>
                     <br><br><br>
-                    <button class="btn boton">Contáctenos</button>
+                    <button class="btn boton"><a href="#formulario">Contáctenos</a></button>
                 </div>
             </div>
         </div>
@@ -37,32 +40,44 @@
     <div class="fondo color-neutro" id="contenedor2">
         <div class="container">
             <div class="row vh-100 justify-content-center align-items-center text-center" id="contenedor3">
-                <div class="col-sm-12 col-md-6 col-lg-4 p-3">
-                    <div class="col-12 color-complementario redondear p-4 d-flex align-items-center" style="height: 300px;">
+                <div class="col-sm-12 col-md-6 p-3">
+                    <div class="col-12 color-complementario redondear p-4 d-flex fit-content" style="height: 350px;">
                         <div class="col-12">
+                            <h4><b><u>Alimentación Saludable</u></b></h4>
                             <h6>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ab dignissimos? Officia accusamus nemo in aliquid consequatur iusto optio. Voluptates, perspiciatis. Placeat facilis architecto nisi illum ducimus quae rerum voluptas.
+                                Una alimentación saludable es esencial para mantener un estilo de vida saludable y prevenir enfermedades crónicas. Para lograrlo, es importante consumir una variedad de alimentos frescos y naturales, evitar los alimentos procesados y ricos en grasas,
+                                azúcares y sal, y comer con moderación. Así, se pueden obtener los nutrientes necesarios y disfrutar de una mejor calidad de vida.
                             </h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 p-3">
-                    <div class="col-12 color-complementario redondear p-4 d-flex align-items-center" style="height: 300px;">
+                <div class="col-sm-12 col-md-6 p-3">
+                    <div class="col-12 color-complementario redondear p-4 d-flex  fit-content" style="height: 350px">
                         <div class="col-12">
+                            <h4><b><u>Suplementos nutricionales</u></b></h4>
                             <h6>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ab dignissimos? Officia accusamus nemo in aliquid consequatur iusto optio. Voluptates, perspiciatis. Placeat facilis architecto nisi illum ducimus quae rerum voluptas.
+                                Los batidos de proteínas y creatina son suplementos populares en el mundo del fitness que pueden ayudar a aumentar la masa muscular y mejorar el rendimiento deportivo. Sin embargo, es importante tomar estos suplementos con precaución y hablar con un profesional
+                                de la salud antes de comenzar a tomarlos, ya que el exceso puede tener efectos negativos en el cuerpo.
                             </h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 p-3">
-                    <div class="col-12 color-complementario redondear p-4 d-flex align-items-center" style="height: 300px;">
-                        <div class="col-12">
-                            <h6>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ab dignissimos? Officia accusamus nemo in aliquid consequatur iusto optio. Voluptates, perspiciatis. Placeat facilis architecto nisi illum ducimus quae rerum voluptas.
-                            </h6>
-                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="fondo fondo-imagen color-complementario">
+        <div class="fondo blur">
+            <div class="row d-flex justify-content-center align-items-center text-center pt-5 m-0">
+                <div class="col-8" id="formulario">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label color-blanco">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre y apellido">
                     </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label color-blanco">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tudirecciondemail@ejemplo.com">
+                    </div>
+                    <button type="submit" class="btn boton" onclick="validar()">Enviar</button>
                 </div>
             </div>
         </div>

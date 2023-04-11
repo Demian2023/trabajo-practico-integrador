@@ -6,4 +6,8 @@ $(document).ready(function() {
         .done(function(mensaje) {
             $("#temperatura").append(mensaje.current_weather.temperature);
         })
+
+    function validar() {
+
+    }
 });
