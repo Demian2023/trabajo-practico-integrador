@@ -30,7 +30,6 @@ $("#formulario").validate({
     'email.required': 'Por favor, introduce tu dirección de correo electrónico',
     'email.email': 'Por favor, introduce una dirección de correo electrónico válida'
   }
-    }
 });
 
 
@@ -38,4 +37,4 @@ $("#formulario").validate({
 function validar(){
     if($("#formulario").valid() == false){
         return;
-    };
+    }
