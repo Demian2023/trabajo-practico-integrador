@@ -25,7 +25,7 @@ $("#formulario").validate({
 });
 
 
-$("#validar").click() {
+$("#validar").click(function() {
     if($("#formulario").valid() == false){
         return;
     };
