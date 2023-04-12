@@ -126,6 +126,7 @@ h6 {
     font-style: italic;
     color: #10113C !important;
     line-height: 2em !important;
+    text-align: justify;
 }
 
 .fondo {
@@ -172,6 +173,32 @@ input::placeholder {
         height: fit-content !important;
         width: 1200px !important;
     }
+    #inicio {
+        height: 100vh;
+    }
+    #imagen {
+        height: 33vh !important;
+        width: 33vh !important;
+        margin-top: 50px !important;
+    }
+    #texto1 {
+        height: 50vh !important;
+    }
+    #ofrecemos {
+        height: fit-content !important;
+    }
+    .imagen-personal1 {
+        height: 40vh;
+    }
+    .imagen-personal2 {
+        height: 40vh;
+    }
+    .imagen-personal3 {
+        height: 40vh;
+    }
+    #texto-buscas {
+        margin: 25px 0px !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -180,6 +207,9 @@ input::placeholder {
     }
     #contenedor {
         margin-top: 40px;
+    }
+    #inicio>.row {
+        height: 100vh !important;
     }
     #texto1 {
         height: 350px !important;
@@ -192,36 +222,39 @@ input::placeholder {
         font-size: 15px;
     }
     .imagen-personal1 {
-        background-position: -120px -5px !important;
+        background-position: -120px 0px !important;
     }
     .imagen-personal2 {
         background-position: -80px 0px !important;
-        background-size: 165% !important;
+        background-size: 180% !important;
     }
     .imagen-personal3 {
-        background-position: -50px -20px;
+        background-position: -50px 0px;
         background-size: 175% !important;
     }
     #contenedor {
         height: fit-content !important;
     }
     .texto-alimentos {
-        width: 90% !important;
+        width: 100% !important;
         height: fit-content !important;
     }
     #container-textos {
-        margin: 20px;
+        margin: auto !important;
         width: 1200px !important;
     }
     #contenedor3 {
         height: fit-content !important;
-        width: 1200px !important;
+        margin: auto;
     }
     #contenedor2 {
-        height: 700px!important;
+        height: fit-content !important;
     }
     .fit-content {
         height: fit-content !important;
+    }
+    .blur>.row {
+        height: 100vh;
     }
 }
 
