@@ -1,0 +1,139 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    height: 100vh;
+}
+.temperatura {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    width: 230px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: rgba(100, 100, 100, 0.452);
+    color: white;
+    z-index: 10;
+}
+
+.arriba {
+    position: fixed;
+    bottom: 35px;
+    right: 0;
+    height: 30px;
+    width: 80px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: rgba(100, 100, 100, 0.452);
+    color: white !important;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.color-neutro {
+    background-color: #F2EECE;
+}
+
+.color-complementario {
+    background-color: #96D600;
+}
+
+.color-acento {
+    background-color: #08FF00;
+}
+
+.blanco {
+    background-color: white;
+}
+
+.color-blanco {
+    color: white;
+}
+
+.imagen {
+    background-image: url(imagenes/alimentos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sombra {
+    box-shadow: 0 0 50px 20px rgba(100, 100, 100, 0.25);
+}
+
+.redondear {
+    border-radius: .75em;
+}
+
+.boton {
+    background-color: #08FF00 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: light !important;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold !important;
+    color: #10113C !important;
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold !important;
+    font-style: italic;
+    color: #10113C !important;
+    line-height: 2em !important;
+}
+
+.fondo {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.fondo-imagen {
+    position: absolute;
+    background-image: url(imagenes/alimentos.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.blur {
+    backdrop-filter: blur(15px) brightness(150%) contrast(20%);
+    z-index: 1;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    #contenedor {
+        height: fit-content !important;
+    }
+    #contenedor2 {
+        height: fit-content !important;
+    }
+    #contenedor3 {
+        height: fit-content !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+   #contenedor {
+    height: fit-content !important;
+    }
+}
