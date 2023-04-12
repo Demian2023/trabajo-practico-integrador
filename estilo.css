@@ -44,6 +44,10 @@ body {
     z-index: 10;
 }
 
+.texto-combustible {
+    text-align: center !important;
+}
+
 a {
     text-decoration: none !important;
     color: black !important;
@@ -79,21 +83,21 @@ a {
 .imagen-personal1 {
     background-image: url(imagenes/chef2.jpg);
     background-position: -150px 0px;
-    background-size: 175%;
+    background-size: 160%;
     background-repeat: no-repeat;
 }
 
 .imagen-personal2 {
     background-image: url(imagenes/nutricionista2.jpg);
     background-position: -80px 0;
-    background-size: 156%;
+    background-size: 125%;
     background-repeat: no-repeat;
 }
 
 .imagen-personal3 {
     background-image: url(imagenes/creatina2.jpg);
     background-position: -50px -30px;
-    background-size: 170%;
+    background-size: 140%;
     background-repeat: no-repeat;
 }
 
@@ -199,6 +203,12 @@ input::placeholder {
     #texto-buscas {
         margin: 25px 0px !important;
     }
+    .blur>.row {
+        height: 100vh;
+    }
+    #container-textos>.row {
+        height: fit-content !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -218,11 +228,15 @@ input::placeholder {
     #imagen {
         height: 300px !important;
     }
+    #ofrecemos {
+        height: fit-content;
+    }
     .letras-ofrecemos {
         font-size: 15px;
     }
     .imagen-personal1 {
         background-position: -120px 0px !important;
+        background-size: 180% !important;
     }
     .imagen-personal2 {
         background-position: -80px 0px !important;
