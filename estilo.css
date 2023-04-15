@@ -73,15 +73,15 @@ a {
 
 .imagen-personal2 {
     background-image: url(imagenes/nutricionista2.jpg);
-    background-position: -80px 0;
-    background-size: 125%;
+    background-position: -80px 0px;
+    background-size: 132%;
     background-repeat: no-repeat;
 }
 
 .imagen-personal3 {
     background-image: url(imagenes/creatina2.jpg);
     background-position: -50px -30px;
-    background-size: 140%;
+    background-size: 150%;
     background-repeat: no-repeat;
 }
 
@@ -163,17 +163,15 @@ input::placeholder {
     #imagen {
         margin-top: 80px !important;
     }
-    #contenedor {
-        height: fit-content !important;
+    #texto1,
+    #texto2 {
+        padding: 10px !important;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
     #imagen {
         margin-top: 80px !important;
-    }
-    #contenedor {
-        height: fit-content !important;
     }
 }
 
