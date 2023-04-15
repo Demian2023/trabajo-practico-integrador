@@ -6,4 +6,50 @@ $(document).ready(function() {
         .done(function(mensaje) {
             $("#temperatura").append(mensaje.current_weather.temperature);
         })
+
+
+});
+
+$("#formulario").validate({
+    rules: {
+        nombre: {
+            required: true,
+            minlength: 3,
+            maxlength: 30
+        },
+        apellido: {
+            required: true,
+            minlength: 3,
+            maxlength: 30
+        },
+        email: {
+            required: true,
+            email: true
+        }
+    },
+    messages: {
+        nombre: {
+            required: "Por favor, ingresa tu nombre",
+            minlength: "El nombre debe tener al menos 2 caracteres",
+            maxlength: "El nombre no debe tener más de 60 caracteres",
+            pattern: "Por favor, ingrese un nombre válido",
+        },
+        apellido: {
+            required: "Por favor, ingresa tu apellido",
+            minlength: "El apellido debe tener al menos 2 caracteres",
+            maxlength: "El apellido no debe tener más de 50 caracteres",
+            pattern: "Por favor, ingrese un apellido válido",
+        },
+        email: {
+            required: "Por favor, ingresa tu mail",
+            email: "Ingrese el formato correcto de mail",
+        }
+    },
+});
+
+
+$("#validar").click(function() {
+    if ($("#formulario").valid() == false) {
+        return;
+    }
 });
