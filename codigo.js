@@ -51,5 +51,78 @@ $("#formulario").validate({
 $("#validar").click(function() {
     if ($("#formulario").valid() == false) {
         return;
+    } else {
+        let nombreUsuario = $("#nombre").val();
+        let apellidoUsuario = $("#apellido").val();
+        let emailUsuario = $("#email").val();
+        $("#nombre-completo-usuario").text(nombreUsuario + " " + apellidoUsuario);
+        $("#email-pedido").text("Enviaremos los detalles al siguiente email: " + emailUsuario);
+        $("#formulario").hide();
+        $("#formulario-paso2").show();
     }
+});
+
+$("#formulario-paso2").validate({
+    rules: {
+        "checkbox[]": {
+            required: true,
+            minlength: 1
+        }
+    },
+    messages: {
+        "checkbox[]": "Debe seleccionar al menos una opción"
+    }
+});
+
+
+$("#validar-paso2").click(function() {
+    if ($("#formulario-paso2").valid() == false) {
+        return;
+    } else {
+        let pedido = [];
+        if ($("#opcion1").is(":checked")) {
+            pedido.push($("#opcion1").val());
+        };
+        if ($("#opcion2").is(":checked")) {
+            pedido.push($("#opcion2").val());
+        };
+        if ($("#opcion3").is(":checked")) {
+            pedido.push($("#opcion3").val());
+        };
+        let pedidoString = pedido.join(", ") + ".";
+        $("#pedido").text(pedidoString);
+
+        if ($("#comentarios").val() !== "") {
+            $("#consulta").html("Tu consulta: " + $("#comentarios").val() + ", será respondida en el mismo mail. <br> Gracias por elegirnos.");
+        }
+
+        $("#formulario-paso2").hide();
+        $("#formulario-paso3").show();
+    }
+});
+
+$("#volver-paso2").click(function() {
+    $("#formulario-paso2").hide();
+    $("#formulario").show();
+});
+
+$("#volver-paso3").click(function() {
+    $("#formulario-paso3").hide();
+    $("#formulario-paso2").show();
+});
+
+$("#boton-pdf").click(function() {
+    const doc = new jsPDF();
+
+    let elementHTML = $('#paraPDF').html();
+    let specialElementHandlers = {
+        '#elementH': function(element, renderer) {
+            return true;
+        }
+    };
+    doc.fromHTML(elementHTML, 15, 15, {
+        'width': 170,
+        'elementHandlers': specialElementHandlers
+    });
+    doc.save();
 });

@@ -24,7 +24,6 @@ body {
     padding-left: 10px;
     border: 2px solid black;
     border-radius: 1em;
-    background-color: rgba(150, 214, 0, 0.75);
     z-index: 10;
 }
 
@@ -94,7 +93,7 @@ a {
 }
 
 .boton {
-    background-color: #96D600 !important;
+    background-color: #08FF00 !important;
     font-family: 'Montserrat', sans-serif !important;
     font-weight: light !important;
 }
@@ -117,15 +116,40 @@ h6 {
     text-align: justify;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.texto-footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal !important;
+    font-style: normal;
+    color: #10113C !important;
+    line-height: 1.5em !important;
+    text-align: justify !important;
+}
+
 .fondo {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
 
 .fondo-imagen {
-    position: absolute;
     background-image: url(imagenes/alimentos.jpg);
     background-size: cover;
     z-index: 1;
@@ -138,12 +162,14 @@ h6 {
 
 #nombre,
 #apellido,
-#email {
+#email,
+textarea {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: bold !important;
 }
 
-label {
+label,
+span {
     font-weight: bold !important;
     font-size: large;
 }
@@ -157,6 +183,11 @@ label {
 input::placeholder {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: bold;
+}
+
+#formulario-paso2,
+#formulario-paso3 {
+    display: none;
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -175,7 +206,8 @@ input::placeholder {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+
+/* @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     ...
 }
 
@@ -185,4 +217,4 @@ input::placeholder {
 
 @media only screen and (min-width: 1200px) {
     ...
-}
+} */
