@@ -1,3 +1,4 @@
+// api weather
 $(document).ready(function() {
     $.ajax({
             method: "GET",
@@ -9,6 +10,8 @@ $(document).ready(function() {
 
 
 });
+
+// validación formulario paso 1
 
 $("#formulario").validate({
     rules: {
@@ -62,6 +65,8 @@ $("#validar").click(function() {
     }
 });
 
+// validación formulario paso 2
+
 $("#formulario-paso2").validate({
     rules: {
         "checkbox[]": {
@@ -111,6 +116,8 @@ $("#volver-paso3").click(function() {
     $("#formulario-paso2").show();
 });
 
+// pdf
+
 $("#boton-pdf").click(function() {
     const doc = new jsPDF();
 
@@ -125,4 +132,17 @@ $("#boton-pdf").click(function() {
         'elementHandlers': specialElementHandlers
     });
     doc.save();
+});
+
+// boton arriba
+
+$(window).scroll(function() {
+    let scroll = $(window).scrollTop();
+    let alturaViewPort = window.innerHeight;
+    console.log(alturaViewPort);
+    if (scroll > alturaViewPort / 4) {
+        $('#arriba').addClass('mostrar');
+    } else {
+        $('#arriba').removeClass('mostrar');
+    }
 });

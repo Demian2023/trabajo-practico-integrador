@@ -23,7 +23,6 @@
     <!-- codigo NavBar -->
 
     <nav id="navbar" class="navbar fixed-top navbar-expand-lg color-complementario">
-        <div class="temperatura" id="temperatura">&nbsp;&nbsp;&nbsp;&nbsp;Temperatura: </div>
         <div class="container">
             <a class="navbar-brand" href="#">FitFuel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,58 +40,73 @@
                         <a class="nav-link" href="#formulario-nav">Contactenos</a>
                     </li>
                 </ul>
+                <div class="d-flex align-items-center">
+                    <div class="temperatura" id="temperatura"><i class="bi bi-cloud-sun" style="font-size: 1.5em"></i>Temperatura: </div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- FitFuel -->
-    <a href="#inicio" class="arriba color-acento"><i class="bi bi-arrow-up-circle"></i> Inicio</a>
+    <a href="#inicio"><i class="bi bi-arrow-up-circle-fill arriba" id="arriba"></i></i></i></a>
     <div class="container" id="inicio">
         <div class="row justify-content-center align-items-center text-center" style="height: fit-content; min-height: 100vh;">
             <div class="col-8 col-sm-10 col-md-4 m-2 imagen redondear d-flex align-items-center sombra" style="height: 350px" id="imagen"></div>
-            <div class="col-9 col-sm-11 col-md-5 m-2 color-neutro d-flex justify-content-center align-items-center redondear ancho" style="height: 400px" id="texto1">
-                <div class="col-md-12" id="contenedor-fitfuel">
-                    <h1>FitFuel</h1>
-                    <br>
-                    <h4 class="texto-combustible">Combustible para atletas</h4>
-                    <br><br><br>
-                    <button class="btn boton color-complementario"><a href="#formulario">Contáctenos</a></button>
+            <div class="col-9 col-sm-11 col-md-5 m-2 relative color-neutro redondear ancho" style="height: 400px" id="texto1">
+                <div class="row absolute d-flex justify-content-center align-items-center pb-5" style="height: 100%; width: 100%;">
+                    <div>
+                        <div class="col-md-12 " id="contenedor-fitfuel ">
+                            <div>
+                                <h1>FitFuel</h1>
+                            </div>
+                            <div>
+                                <h4 class="texto-combustible ">Combustible para atletas</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row absolute d-flex justify-content-center align-items-end pb-5" style="height: 100%; width: 100%;">
+                    <div>
+                        <button class="btn boton "><a href="#formulario ">Contáctenos</a></button>
+                    </div>
+                </div>
+
             </div>
         </div>
+
     </div>
 
     <!-- que ofrecemos -->
 
-    <div class="container" id="ofrecemos">
-        <div class="row justify-content-start" style="height: 10vh;">
+    <div class="container " id="ofrecemos ">
+        <div class="row justify-content-start " style="height: 10vh; ">
             <h1>¿Qué ofrecemos?</h1>
         </div>
-        <div class="row">
-            <div class="col-md-10 col-lg-4 px-1 my-3">
-                <div class="col-md-12 pb-4 imagen-personal1">
-                    <div class="col-12 d-flex justify-content-center align-items-end text-center" style="height: 40vh;">
-                        <h4 class="blanco redondear">Comida saludable</h4>
+        <div class="row ">
+            <div class="col-md-10 col-lg-4 px-1 my-3 ">
+                <div class="col-md-12 pb-4 imagen-personal1 ">
+                    <div class="col-12 d-flex justify-content-center align-items-end text-center " style="height: 40vh; ">
+                        <h4 class="blanco redondear ">Comida saludable</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 col-lg-4 px-1 my-3">
-                <div class="col-md-12 pb-4 imagen-personal2">
-                    <div class="col-12 d-flex justify-content-center align-items-end text-center" style="height: 40vh;">
-                        <h4 class="blanco redondear">Dieta</h4>
+            <div class="col-md-10 col-lg-4 px-1 my-3 ">
+                <div class="col-md-12 pb-4 imagen-personal2 ">
+                    <div class="col-12 d-flex justify-content-center align-items-end text-center " style="height: 40vh; ">
+                        <h4 class="blanco redondear ">Dieta</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 col-lg-4 px-1 my-3">
-                <div class="col-md-12 pb-4 imagen-personal3">
-                    <div class="col-12 d-flex justify-content-center align-items-end text-center" style="height: 40vh;">
-                        <h4 class="blanco redondear">Proteina/kreatina</h4>
+            <div class="col-md-10 col-lg-4 px-1 my-3 ">
+                <div class="col-md-12 pb-4 imagen-personal3 ">
+                    <div class="col-12 d-flex justify-content-center align-items-end text-center " style="height: 40vh; ">
+                        <h4 class="blanco redondear ">Proteina/kreatina</h4>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <h6 class="my-5" id="texto-buscas">¿Buscas un equipo de expertos en nutrición y deporte para ayudarte a alcanzar tus metas de salud y bienestar? ¡Tenemos la solución perfecta para ti! Nuestro grupo de nutricionistas y deportistas altamente calificados se dedica a ayudar
+            <div class="row ">
+                <div class="col-12 ">
+                    <h6 class="my-5 " id="texto-buscas ">¿Buscas un equipo de expertos en nutrición y deporte para ayudarte a alcanzar tus metas de salud y bienestar? ¡Tenemos la solución perfecta para ti! Nuestro grupo de nutricionistas y deportistas altamente calificados se dedica a ayudar
                         a personas como tú a mejorar su estilo de vida a través de planes de dietas y suplementos nutricionales personalizados y efectivos. Ya sea que quieras perder peso, ganar masa muscular o simplemente llevar una vida más saludable,
                         nuestro equipo tiene la experiencia y los conocimientos necesarios para ayudarte a alcanzar tus objetivos.</h6>
                 </div>
@@ -102,24 +116,24 @@
 
     <!-- textos alimentación -->
 
-    <div class="container min-vh-100 mw-100 px-5 color-neutro" style="height: fit-content">
-        <div class="row min-vh-100 fit-content d-flex justify-content-center text-center" style="height: fit-content">
-            <div class="col-sm-12 col-lg-6 p-5" id="texto1" style="margin: auto">
-                <div class="col-12 blanco redondear p-4 sombra my-3" style="height: fit-content; min-height: 400px">
-                    <div class="col-12">
+    <div class="container min-vh-100 mw-100 px-5 color-neutro " style="height: fit-content ">
+        <div class="row min-vh-100 fit-content d-flex justify-content-center text-center " style="height: fit-content ">
+            <div class="col-sm-12 col-lg-6 p-5 " id="texto1 " style="margin: auto ">
+                <div class="col-12 blanco redondear p-4 sombra my-3 " style="height: fit-content; min-height: 400px ">
+                    <div class="col-12 ">
                         <h4><b><u>Alimentación saludable</u></b></h4>
-                        <h6 class="d-flex align-items-center" style="height: fit-content; min-height: 300px;">
+                        <h6 class="d-flex align-items-center " style="height: fit-content; min-height: 300px; ">
                             Una alimentación saludable es esencial para mantener un estilo de vida saludable y prevenir enfermedades crónicas. Para lograrlo, es importante consumir una variedad de alimentos frescos y naturales, evitar los alimentos procesados y ricos en grasas,
                             azúcares y sal, y comer con moderación. Así, se pueden obtener los nutrientes necesarios y disfrutar de una mejor calidad de vida.
                         </h6>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-6 p-5" id="texto2" style="margin: auto">
-                <div class="col-12 blanco redondear p-4 sombra" style="height: fit-content; min-height: 400px">
-                    <div class="col-12">
+            <div class="col-sm-12 col-lg-6 p-5 " id="texto2 " style="margin: auto ">
+                <div class="col-12 blanco redondear p-4 sombra " style="height: fit-content; min-height: 400px ">
+                    <div class="col-12 ">
                         <h4><b><u>Suplementos nutricionales</u></b></h4>
-                        <h6 class="d-flex align-items-center" style="height: fit-content; min-height: 300px;">
+                        <h6 class="d-flex align-items-center " style="height: fit-content; min-height: 300px; ">
                             Los batidos de proteínas y creatina son suplementos populares en el mundo del fitness que pueden ayudar a aumentar la masa muscular y mejorar el rendimiento deportivo. Sin embargo, es importante tomar estos suplementos con precaución y hablar con un profesional
                             de la salud antes de comenzar a tomarlos, ya que el exceso puede tener efectos negativos en el cuerpo.
                         </h6>
@@ -158,27 +172,29 @@
                         </div>
                     </form>
                     <!-- paso 2 -->
-                    <form action="" class="absolute" id="formulario-paso2">
+                    <form action="" class="absolute col-md-6 col-sm-9 col-lg-5" id="formulario-paso2">
                         <div class="relative">
                             <label class="form-label color-blanco">Selecciona una o varias opciones:</label>
                             <br>
                             <div class="">
                                 <input class="" type="checkbox" id="opcion1" name="checkbox[]" value="Comida saludable">
-                                <label class=" color-blanco" for="opcion1">Comida saludable</label>
+                                <label class="color-blanco" for="opcion1">Comida saludable</label>
                             </div>
                             <div class="">
                                 <input class="" type="checkbox" id="opcion2" name="checkbox[]" value="Dieta">
-                                <label class=" color-blanco" for="opcion2">Dieta</label>
+                                <label class="color-blanco" for="opcion2">Dieta</label>
                             </div>
                             <div class="">
                                 <input class="" type="checkbox" id="opcion3" name="checkbox[]" value="Suplemento nutricional">
-                                <label class=" color-blanco" for="opcion3">Suplemento nutricional</label>
+                                <label class="color-blanco" for="opcion3">Suplemento nutricional</label>
                             </div>
                             <label for="checkbox[]" class="error"></label>
                             <br>
                             <label for="comentarios" class="color-blanco">Consúltanos:</label>
                             <br><br>
-                            <textarea id="comentarios" name="comentarios" rows="4" cols="50" class="redondear p-3"></textarea>
+                            <div style="max-width: 550px">
+                                <textarea id="comentarios" name="comentarios" class="redondear p-3" style="width: 100%;"></textarea>
+                            </div>
                             <br><br>
                             <div class="w-100 d-flex justify-content-end">
                                 <button type="button" class="btn boton color-acento mx-1" id="volver-paso2">Volver</button>
@@ -210,23 +226,23 @@
 
     <!-- footer -->
 
-    <div class="container mw-100 m-0 p-0 color-complementario">
-        <div class="m-0 p-0" style="min-height: 300px; height: 300px;">
-            <div class="m-0 p-0">
-                <div class="col-12 d-flex justify-content-center p-0 m-0 pt-4">
+    <div class="container mw-100 m-0 p-0 color-complementario ">
+        <div class="m-0 p-0 " style="min-height: 300px; height: fit-content; ">
+            <div class="m-0 p-0 ">
+                <div class="col-12 d-flex justify-content-center p-0 m-0 pt-4 ">
                     <h6><u>Seguinos</u></h6>
                 </div>
             </div>
-            <div class="m-0 p-0">
-                <div class="col-12 d-flex justify-content-center p-0 m-0">
-                    <a href=""><i class="bi bi-facebook mx-2" style="font-size: 2em;"></i></a>
-                    <a href=""><i class="bi bi-twitter mx-2" style="font-size: 2em;"></i></a>
-                    <a href=""><i class="bi bi-instagram mx-2" style="font-size: 2em;"></i></a>
-                    <a href=""><i class="bi bi-youtube mx-2" style="font-size: 2em;"></i></a>
+            <div class="m-0 p-0 ">
+                <div class="col-12 d-flex justify-content-center p-0 m-0 ">
+                    <a href=" "><i class="bi bi-facebook mx-2 " style="font-size: 2em; "></i></a>
+                    <a href=" "><i class="bi bi-twitter mx-2 " style="font-size: 2em; "></i></a>
+                    <a href=" "><i class="bi bi-instagram mx-2 " style="font-size: 2em; "></i></a>
+                    <a href=" "><i class="bi bi-youtube mx-2 " style="font-size: 2em; "></i></a>
                 </div>
-                <div class="div d-flex justify-content-center p-0 m-0">
-                    <div class="col-6 my-3">
-                        <h6 class="texto-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore libero aperiam temporibus doloribus unde blanditiis et quae possimus assumenda, voluptates quo commodi consectetur cumque, sed molestiae expedita vel tempore delectus.</h6>
+                <div class="div d-flex justify-content-center p-0 m-0 ">
+                    <div class="col-6 my-3 ">
+                        <h6 class="texto-footer ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore libero aperiam temporibus doloribus unde blanditiis et quae possimus assumenda, voluptates quo commodi consectetur cumque, sed molestiae expedita vel tempore delectus.</h6>
                     </div>
                 </div>
             </div>
